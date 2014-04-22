@@ -1,0 +1,55 @@
+<!--- TEMPLATE FOR INDEX PAGE --->
+{{!< default}}
+
+<div class="container">
+	
+	<!-- HEADER COLUMN --->	
+	<div class="header-col">
+		<header>
+			{{> header }}	
+		</header>
+	</div>
+	
+	<!--- MAIN COLUMN --->
+	<div class="main-col">
+		{{#foreach posts}}
+		<div class="post-entry post-list">
+			<article role="article" itemscope itemtype="http://schema.org/Article" class="postlistArticle">
+				<div class="post-side">
+					<time datetime="{{date format="YYYY MMM DD"}}" itemprop="datePublished" class="post-date">
+						<span class="year">{{date format='YYYY'}}</span>
+						<span class="datetime-month">{{date format="MMM"}}</span><br>
+						<span class="datetime-day">{{date format="DD"}}</span>
+					</time>
+				</div>
+				<div class="post-main">
+					<a href="{{url}}" class="postlistLink">
+						<div>
+							<h2>{{title}}</h2>
+							{{excerpt}} 
+							<span class="readmore">
+								<i class="fa fa-plus-square plus-sign"></i>
+								<span class="readmore-hover">READMORE</span>
+							</span>
+						</div>
+					</a>
+					<div class="post-info">
+						{{#if tags}}
+							<div class="tags">
+								<i class="fa fa-tags fa-lg"></i> {{tags separator=" | "}}
+							</div>
+						{{/if}}
+					</div>
+				</div>
+			</article>
+		</div>
+		{{/foreach}}
+
+		<div class="pagination">
+			{{#if pagination}}{{{ pagination}}}{{/if}}
+		</div>
+		<footer>
+			{{> footer}}
+		</footer>
+	</div>
+</div>

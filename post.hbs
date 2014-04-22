@@ -1,0 +1,52 @@
+<!--- TEMPLATE FOR BLOG POST --->
+{{!< default}}
+
+<div class="container">
+	
+	<!-- HEADER COLUMN --->	
+	<div class="header-col">
+		<header>
+			{{> header }}	
+		</header>
+	</div>
+	
+	
+	<!--- MAIN COLUMN --->
+	<div class="main-col">
+		<main>
+			<div class="post-entry">
+				<!--- POST CONTENT --->
+				{{#post}}	
+				<article role="article" itemscope itemtype="http://schema.org/Article" class="postlistArticle">
+					<h1 class="post-title">{{title}}</h1>
+					<time datetime="{{date format="YYYY MMM DD"}}" itemprop="datePublished">
+						<span class="datetime-full">{{date format="DD.MM.YYYY"}}</span>
+					</time>
+					<div class="post-info">
+						{{#if tags}}
+							<div class="tags">
+							<i class="fa fa-tags fa-lg"></i> {{tags separator=" | "}}
+							</div>
+						{{/if}}
+					</div>
+					<div class="hrule"></div>
+					<div class="postContent">
+						{{content}} 
+					</div>
+				</article>
+				
+				<!--- Sharing Section --->
+				{{> share }}
+
+				<!--- Comment sections - using DISQUS as default --->
+				{{> comment }}
+				
+				{{/post}}	
+			</div>
+		</main>
+		<footer>
+			{{> footer}}
+		</footer>
+	</div>
+</div>
+

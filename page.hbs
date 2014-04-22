@@ -1,0 +1,40 @@
+<!--- TEMPLATE FOR STATIC PAGE --->
+{{!< default}}
+
+<div class="container">
+	
+	<!-- HEADER COLUMN --->	
+	<div class="header-col">
+		<header>
+			{{> header }}	
+		</header>
+	</div>
+
+	<!--- MAIN COLUMN --->
+	<div class="main-col">
+		<main>
+			<div class="post-entry">
+				<!--- POST CONTENT --->
+				{{#post}}	
+				<article role="article" itemscope itemtype="http://schema.org/Article" class="postlistArticle">
+					<h1 class="post-title">{{title}}</h1>
+					<div class="post-info">
+						{{#if tags}}
+							<div class="tags">
+							<i class="fa fa-tags fa-lg"></i> {{tags separator=" | "}}
+							</div>
+						{{/if}}
+					</div>
+					<div class="postContent">
+						{{content}} 
+					</div>
+				</article>
+				{{/post}}	
+			</div>
+		</main>
+		<footer>
+			{{> footer}}
+		</footer>
+	</div>
+</div>
+

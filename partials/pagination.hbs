@@ -1,0 +1,20 @@
+<!--- PAGINATION SECTION --->
+<nav class="pagination" role="pagination">
+
+	<!--- Previous page --->
+	{{#if prev}}
+		<a class="newer-posts" href="{{pageUrl prev}}">
+			<i class='fa fa-caret-square-o-left fa-lg'></i> Newer Posts
+		</a>
+	{{/if}}
+		
+	<!--- Page Number --->
+	<span class="pagenumber">Page {{page}} / {{pages}}</span>
+
+	<!--- Next page --->
+	{{#if next}}
+		<a class="older-posts" href="{{pageUrl next}}">
+			Older Posts <i class="fa fa-caret-square-o-right fa-lg"></i>
+		</a>
+	{{/if}}
+</nav>
