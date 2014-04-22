@@ -16,6 +16,7 @@ You can view a demo of Minighost at: [http://www.cheapyu.com/](http://www.cheapy
 - Clone the repository via GitHub here: [https://github.com/thyu/minighost](https://github.com/thyu/minighost).
 - Extract the content to *$GHOST_HOME/content/themes/MiniGhost*.
 - Create a static page titled "About" from the Ghost dashboard - This will be the "About me" page.
+- (Optional) Upload the blog cover page and the blog logo.
 - (Optional) Customize style using the LESS script file: *MiniGhost/assets/css/style.less*.
 - (Optional) Customize the theme structure by editing the template file (e.g. index.hbs, partials/header.hbs, etc.)
 

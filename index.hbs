@@ -14,7 +14,7 @@
 	<div class="main-col">
 		{{#foreach posts}}
 		<div class="post-entry post-list">
-			<article role="article" itemscope itemtype="http://schema.org/Article" class="postlistArticle">
+			<article role="article" itemscope itemtype="http://schema.org/Article">
 				<div class="post-side">
 					<time datetime="{{date format="YYYY MMM DD"}}" itemprop="datePublished" class="post-date">
 						<span class="year">{{date format='YYYY'}}</span>
@@ -23,7 +23,7 @@
 					</time>
 				</div>
 				<div class="post-main">
-					<a href="{{url}}" class="postlistLink">
+					<a href="{{url}}" class="post-list-link">
 						<div>
 							<h2>{{title}}</h2>
 							{{excerpt}} 
