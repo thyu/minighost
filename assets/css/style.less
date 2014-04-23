@@ -150,60 +150,6 @@
 	margin: 4% 30px 30px 4%;
 }
 
-/* normal screen width width >= 960 */
-@media only screen and (min-width: 960px) {
-	.blog-logo{
-		position: absolute;
-		left: 100%;
-		top: 100%;
-		padding: 0;
-		margin: -120px 0 0 -40px;
-	}
-	.header-col{
-		width: 30%;
-		max-width: @LENGTH_SIDE_MAXWIDTH; 
-		height: 100%;
-		bottom: 0;
-	}
-	.main-col{
-		width: 70%;	
-		max-width: 640px;
-	}
-	.header-placeholder{ 
-		display: block; 
-	}
-	.header-content{
-		position: fixed;
-		height: 100%;
-		width: 30%;
-		max-width: @LENGTH_SIDE_MAXWIDTH - 60px; 
-		top: 0;
-		.header-menu{
-			margin-bottom: 15px;	
-			bottom: 30px;
-			right: 40px;
-		}
-		.header-title{ 
-			margin-top: 120px;
-			text-align: right; 
-		}
-	}
-}
-
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
-
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) { }
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
 
 /* Override original Skeleton CSS */ 
 body{
@@ -287,14 +233,14 @@ hr{
 	font-size: 0.8em;
 }
 .post-side{
-	width: 8%;
+	width: 11%;
 	padding: 0 1% 0 1%;
 	display: inline-block;
 	text-align: right;
 	vertical-align: top;
 }
 .post-main{
-	width: 89%;
+	width: 86%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -379,3 +325,62 @@ hr{
 	padding: 20px 3% 20px 3%;
 	margin-top: 20px;
 }
+
+/* normal screen width width >= 960 */
+@media only screen and (min-width: 960px) {
+	.blog-logo{
+		position: absolute;
+		left: 100%;
+		top: 100%;
+		padding: 0;
+		margin: -120px 0 0 -40px;
+	}
+	.header-col{
+		width: 30%;
+		max-width: @LENGTH_SIDE_MAXWIDTH; 
+		height: 100%;
+		bottom: 0;
+	}
+	.main-col{
+		width: 70%;	
+		max-width: 640px;
+	}
+	.header-placeholder{ 
+		display: block; 
+	}
+	.header-content{
+		position: fixed;
+		height: 100%;
+		width: 30%;
+		max-width: @LENGTH_SIDE_MAXWIDTH; 
+		top: 0;
+		.header-menu{
+			margin-bottom: 15px;	
+			bottom: 30px;
+			right: 40px;
+		}
+		.header-title{ 
+			margin-top: 120px;
+			text-align: right; 
+		}
+	}
+	.post-entry{
+		padding: 30px 2% 50px 8%;
+		width: 90%;
+	}
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) { }
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
