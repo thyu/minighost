@@ -13,11 +13,16 @@
 
 /* BLOG SPECIFIC */
 .blog-logo{
-	width: 100px;
+	display: block;
+	position: relative;
+	padding: 20px;
+	width: 80px;
+	left: 100%;
+	margin-left: -150px;
 	border-radius: 50%;
 }
 .blog-title{
-	font-size: 5em;
+	font-size: 3.5em;
 	margin: 0;
 	padding: 0;
 	line-height: 1;
@@ -63,20 +68,21 @@
 	background-color: @COLOR_HEADER_BG;
 	.header-title{
 		display: inline-block;
-		margin: 20px 20px 20px 20px;
+		margin: 0px 20px 0px 20px;
 	}
 	.header-menu{
 		display: inline-block;
 		position: absolute;
 		left: 10px;
-		bottom: 10px;
+		bottom: 100%;
 		margin: 15px;
+		margin-bottom: -60px;
 		.header-menu-button{
 			color: #888888;
 			position: relative;
 			text-align: center;	
 			display: inline-block;
-			width: 5em;
+			width: 4em;
 			.header-menu-button-icon{
 				position: relative;
 				top: 0em;
@@ -146,6 +152,13 @@
 
 /* normal screen width width >= 960 */
 @media only screen and (min-width: 960px) {
+	.blog-logo{
+		position: absolute;
+		left: 100%;
+		top: 100%;
+		padding: 0;
+		margin: -120px 0 0 -40px;
+	}
 	.header-col{
 		width: 30%;
 		max-width: @LENGTH_SIDE_MAXWIDTH; 
@@ -163,13 +176,17 @@
 		position: fixed;
 		height: 100%;
 		width: 30%;
-		max-width: @LENGTH_SIDE_MAXWIDTH; 
+		max-width: @LENGTH_SIDE_MAXWIDTH - 60px; 
 		top: 0;
 		.header-menu{
+			margin-bottom: 15px;	
 			bottom: 30px;
-			right: 0;
+			right: 40px;
 		}
-		.header-title{ text-align: right; }
+		.header-title{ 
+			margin-top: 120px;
+			text-align: right; 
+		}
 	}
 }
 

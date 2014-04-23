@@ -6,9 +6,13 @@
 <!--- CONTNET OF HEADER --->
 <div class="header-content" {{#if @blog.cover}}style="background-image: url('{{@blog.cover}}')"{{/if}}>
 	
+	{{#if @blog.logo}}
+		<a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" class="blog-logo" /></a>
+	{{/if}}
+
 	<!--- Title --->	
 	<div class="header-title">
-		{{#if @blog.logo}}<a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" class="blog-logo" /></a>{{/if}}
+
 		<a href="{{@blog.url}}">
 			<h1 class="blog-title">{{@blog.title}}</h1>
 		</a>
