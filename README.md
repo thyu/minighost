@@ -1,14 +1,10 @@
 # MiniGhost - A minimal Ghost theme
 
-MiniGhost is a minimal yet neat frame for [Ghost](http://ghost.org/). It is an open source, mobile first, CSS3-oriented, Javascript-free (except modernizr), customizable theme for personal blogging.
-
-# MiniGhost - A minimal Ghost theme
-
 >Below are a few edits I made to the theme I thought people would want to use. 
 
 MiniGhost is a minimal yet neat frame for [Ghost](http://ghost.org/). It is an open source, mobile first, CSS3-oriented, Javascript-free (except modernizr), customizable theme for personal blogging.
 
-![Changes](minighost/Updates.PNG)
+View the Updates image to see changes
 
 ##Added:
 + Social media icons in the header
