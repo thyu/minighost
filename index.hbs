@@ -16,7 +16,8 @@
 		<div class="post-entry post-list">
 			<article role="article" itemscope itemtype="http://schema.org/Article">
 				<div class="post-side">
-					<time datetime="{{date format="YYYY MMM DD"}}" itemprop="datePublished" class="post-date">
+				<img src="{{image}}" alt="" width=50px, height=50px, align:left, padding-right:10px, display: inline-block;>
+					<time datetime="{{date format="YYYY MMM DD"}}" itemprop="datePublished">
 						<span class="year">{{date format='YYYY'}}</span>
 						<span class="datetime-month">{{date format="MMM"}}</span><br>
 						<span class="datetime-day">{{date format="DD"}}</span>
@@ -26,6 +27,7 @@
 					<a href="{{url}}" class="post-list-link">
 						<div>
 							<h2>{{title}}</h2>
+							
 							{{excerpt}} 
 							<span class="readmore">
 								<i class="fa fa-plus-square plus-sign"></i>
